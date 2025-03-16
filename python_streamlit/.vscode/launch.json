@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Streamlit",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "streamlit",
+            "args": [
+                "run",
+                "${workspaceFolder}/app/start.py",
+                "--server.port", "8080",
+                "--server.runOnSave", "true"
+            ],
+            "console": "integratedTerminal"
+        }
+    ]
+}
