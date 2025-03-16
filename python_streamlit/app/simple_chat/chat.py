@@ -4,11 +4,6 @@ import streamlit as st
 
 def show_chat_msg(chat_service) -> None:
     
-    st.header("Chat")
-    if st.button("New Chat"):
-        chat_service.clear_chat()
-        st.rerun()
-
     for message in chat_service.messages:
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
